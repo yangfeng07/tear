@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			@keyframes move{
+				0%{
+					left: 17px;
+				    top: 45px;
+				}
+				50%{
+					left: 17px;
+				    top: 25px;
+				}
+				100%{
+					left: 17px;
+				    top: 45px;
+				}
+			}
+			@keyframes domove{
+				0%{
+					transform: scale(1);
+				}
+				50%{
+					transform: scale(0.8);
+				}
+				100%{
+					transform: scale(1);
+				}
+			}
+			@keyframes lmove{
+				0%{
+					left: 13px;
+				    top: 90px;
+					transform: scale(1);
+				}
+				20%{
+					left: 13px;
+				    top: 110px;
+					transform: scale(0);
+				}
+				21%{
+					left: 70px;
+				    top: 40px;
+					transform: scale(0);
+				}
+				50%{
+					left: 70px;
+				    top: 90px;
+					transform: scale(1);
+				}
+				70%{
+					left: 70px;
+				    top: 110px;
+					transform: scale(0);
+				}
+				71%{
+					left: 13px;
+				    top: 40px;
+					transform: scale(0);
+				}
+				100%{
+					left: 13px;
+				    top: 90px;
+					transform: scale(1);
+				}
+			}
+			#box{
+				width: 120px;
+				height: 120px;
+				background: #ffda6a;
+				border-radius: 50%;
+				margin: 50px auto;
+				position: relative;
+			}
+			.a{
+				width: 86px;
+				height: 61px;				
+				position: absolute;
+				left: 17px;
+				top: 45px;
+				animation: move 2s infinite forwards;		
+			}
+			.m{
+				width: 86px;
+				height: 31px;
+								
+			}
+			.y{
+				width: 42px;
+				height: 16px;
+				padding: 14px 22px 0 22px;
+				animation: domove 2s infinite forwards;
+			}
+			.l{
+				width: 21px;
+				height: 29px;
+				position: relative;
+				left: 13px;
+				top: 90px;
+				animation: lmove 2s infinite forwards;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div class="a">
+				<img class="m" src="to.png"/>
+				<img class="y" src="zui.png"/>				
+			</div>
+			<img class="l" src="lei.png"/>
+		</div>
+	</body>
+</html>
